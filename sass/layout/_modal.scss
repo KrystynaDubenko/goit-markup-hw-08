@@ -1,0 +1,189 @@
+.modal__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.is-hidden .modal {
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 40px;
+    
+    transform: translate(-50%, -50%) scale(1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-color: var(--focus-color);
+    }
+}
+.modal__close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: var(--focus-color);
+    }
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: none;
+    pointer-events: none;
+}
+.modal-form__modal-action {
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+
+    color: var(--main-text-color);
+}
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+.modal-input {
+    width: 100%;
+    height: 40px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        outline: none;
+        border-color: var(--focus-color);
+    }
+
+    &:focus+ .modal-input__icon {
+        fill: var(--focus-color);
+    }
+}
+.modal-input-wrapper {
+    display: block;
+    position: relative;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+.modal-input__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.user-message {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 16px;
+    padding-left: 16px;
+
+    resize: none;
+
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+    }
+
+    &:focus {
+        outline: none;
+        border-color: var(--focus-color);
+    }
+}
+.modal-check {
+    display: flex;
+    align-items: center;
+
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--secondary-text-color);
+
+    &::before {
+        display: block;
+        content: "";
+        width: 16px;
+        height: 15px;
+        border: 1px solid #000;
+        cursor: pointer;
+        margin-right: 8px;
+    }
+}
+.modal-checkbox-term {
+    &:checked + .modal-check::before {
+        background-image: url(../images.img/vector.svg);
+        background-position: center;
+    }
+
+    &:focus + .modal-check::before {
+        background-color: var(--focus-color);
+    }
+}
+.modal-term-link {
+    color: var(--focus-color);
+
+    &:hover {
+        color: var(--focus-color);
+    }
+}
+.modal-button {
+    width: 200px;
+    height: 50px;
+    align-self: center;
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    display: block;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color: var(--standart-color);
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    margin-top: 30px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
