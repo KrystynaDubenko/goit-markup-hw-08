@@ -81,7 +81,11 @@ section {
   color: var(--focus-color);
 }
 
-.navigation-item {
+.navigation {
+  display: none;
+}
+
+.in-touch {
   display: none;
 }
 
