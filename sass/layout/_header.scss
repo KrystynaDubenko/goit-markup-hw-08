@@ -1,22 +1,21 @@
+.header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
 .navigation {
     display: none;
 }
 .in-touch {
     display: none;
 }
-
+.logo-light-theme {
+    color:#212121;
+}
 .menu-btn {
-    background-color: transparent;
     border: none;
-    padding: 0;
+    background-color: transparent;
 }
-.menu {
-    width: 40px;
-    height: 40px;
-    fill:rgba(33, 33, 33, 1);
-}
-/*
-.header {
+/*.header {
     border-bottom: 1px solid #ECECEC;
 }
 .header .container {
@@ -145,5 +144,4 @@
     &:focus {
         fill: var(--focus-color);
     }
-}
-*/
+} */
