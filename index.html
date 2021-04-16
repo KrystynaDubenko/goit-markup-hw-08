@@ -52,11 +52,52 @@
         +380961111111</a>
     </li>
   </ul>
-  <button type="button" class="menu-btn">
+  <button type="button" class="menu-btn" data-menu-button>
     <svg class="menu" width="40px" height="40px">
       <use href="./images.img/sprite-copy.svg#icon-menu"></use>
     </svg>
   </button>
+   </div>
+   
+   <div class="mobile-menu" data-menu>
+     <button type="button" class="mobile-menu__close-btn" data-menu-close>
+       <svg class="mobile-menu__close-icon" width="40px" height="40px">
+         <use href="./images.img/sprite-copy.svg#icon-close"></use>
+       </svg>
+     </button>
+     <ul class="mobile-menu__list">
+       <li class="mobile-menu__item list-all">
+         <a href="./index.html" class="mobile-menu__link link">Студия</a>
+        </li>
+       <li class="mobile-menu__item list-all">
+         <a href="./portfolio.html" class="mobile-menu__link link">Портфолио</a>
+        </li>
+       <li class="mobile-menu__item list-all">
+         <a href="" class="mobile-menu__link link">Контакты</a>
+        </li>
+     </ul>
+     <ul class="mobile-menu_list-contacts">
+       <li class="mobile-menu__item-contacts list-all">
+         <a href="" class="mobile-menu__link-contacts link">+38 096 111 11 11</a>
+        </li>
+       <li class="mobile-menu__item-contacts list-all">
+         <a href="" class="mobile-menu__link-contacts link">info@devstudio.com</a>
+        </li>
+     </ul>
+     <ul class="mobile-menu__social-list">
+       <li class="mobile-menu__social-item list-all">
+         <a href="" class="mobile-menu__social-link link">Instagram</a>
+      </li>
+       <li class="mobile-menu__social-item list-all">
+         <a href="" class="mobile-menu__social-link link">Twitter</a>
+      </li>
+       <li class="mobile-menu__social-item list-all">
+         <a href="" class="mobile-menu__social-link link">Facebook</a>
+      </li>
+       <li class="mobile-menu__social-item list-all">
+         <a href="" class="mobile-menu__social-link link">LinkedIn</a>
+      </li>
+     </ul>
    </div>
 </header>
 
@@ -475,6 +516,8 @@
 </div>
 
 <script src="./js/modal.js"></script>
+
+<script src="./js/mobile-menu.js"></script>
 
 </body>
 
