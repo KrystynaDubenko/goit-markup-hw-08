@@ -6,7 +6,11 @@
 .logo-light-theme {
     color: var(--main-text-color);
 }
-
+.mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
 @media screen and (max-width: 767px) {
     .navigation {
         display: none;
