@@ -1,35 +1,75 @@
-.social {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.social__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: var(--standart-color);
-
-    transition-property: fill;
-    transition-property: background-color;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover .social__icon,
-    &:focus .social__icon{
-    fill: var(--standart-color);
+@media screen and (max-width:1199px) {
+    .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .social__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: var(--standart-color);
+    
+        transition-property: fill;
+        transition-property: background-color;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover .social__icon,
+        &:focus .social__icon{
+        fill: var(--standart-color);
+        }
+    }
+    
+    .social__icon {
+        fill: rgba(175, 177, 184, 1);
+    
+        transition-property: fill;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+            background-color: var(--focus-color);
+        }
     }
 }
 
-.social__icon {
-    fill: rgba(175, 177, 184, 1);
-
-    transition-property: fill;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        background-color: var(--focus-color);
+@media screen and (min-width: 1200px) {
+    .social {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .social__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: var(--standart-color);
+    
+        transition-property: fill;
+        transition-property: background-color;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover .social__icon,
+        &:focus .social__icon{
+        fill: var(--standart-color);
+        }
+    }
+    
+    .social__icon {
+        fill: rgba(175, 177, 184, 1);
+    
+        transition-property: fill;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+            background-color: var(--focus-color);
+        }
     }
 }
