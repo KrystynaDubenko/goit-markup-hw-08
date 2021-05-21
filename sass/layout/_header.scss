@@ -156,9 +156,11 @@
             margin-left: 88px;
     }
     
+    .navigation-item__first {
+        margin-bottom: 10px;
+    }
     .list {
         display: flex;
-        align-items: center;
     }
 
     .im-here {
@@ -181,8 +183,6 @@
         line-height: 1.14;
         letter-spacing: 0.02em;
         color:var(--main-text-color);
-        padding-top: 30px;
-        padding-bottom: 30px;
         align-items: center;
     
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -282,8 +282,6 @@
         line-height: 1.14;
         letter-spacing: 0.02em;
         color:var(--main-text-color);
-        padding-top: 30px;
-        padding-bottom: 30px;
         align-items: center;
     
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
