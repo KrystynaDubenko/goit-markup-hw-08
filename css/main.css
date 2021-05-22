@@ -1545,7 +1545,7 @@ section {
   .advantage {
     padding-top: 60px;
   }
-  .advantage .advantage-set {
+  .advantage-set {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
@@ -1554,7 +1554,7 @@ section {
     /* margin-top: -30px;
         margin-left: -30px;*/
   }
-  .advantage .advantage-items {
+  .advantage-items {
     margin-top: -30px;
     /*margin-left: -30px;*/
     /*margin-top: 30px;
@@ -1564,7 +1564,7 @@ section {
     justify-items: center;
     margin-bottom: 60px;
   }
-  .advantage .advantage-card {
+  .advantage-card {
     margin-top: 30px;
     flex-basis: calc((100% - 120px)/4);
     display: flex;
@@ -1577,7 +1577,7 @@ section {
     border-radius: 4px;
     margin-bottom: 30px;
   }
-  .advantage .advantage-name {
+  .advantage-name {
     display: flex;
     justify-content: center;
     font-family: var(--main-font);
@@ -1589,7 +1589,7 @@ section {
     color: var(--main-text-color);
     margin-bottom: 10px;
   }
-  .advantage .advantage-explanation {
+  .advantage-explanation {
     display: flex;
     font-family: var(--main-font);
     font-size: 14px;
@@ -1599,7 +1599,7 @@ section {
   }
 }
 
-@media screen and (max-width: 767px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .advantage {
     padding-top: 60px;
   }
@@ -1642,7 +1642,7 @@ section {
   }
 }
 
-@media screen and (max-width: 767px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .advantage {
     padding-top: 94px;
   }

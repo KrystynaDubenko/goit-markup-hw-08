@@ -1,6 +1,7 @@
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
     .advantage {
         padding-top: 60px;
+    }
     .advantage-set {
         flex-wrap:wrap;
         flex-direction: column;
@@ -141,4 +142,4 @@
         letter-spacing: 0.03em;
         color: var(--secondary-text-color);
     }
-}}
+}
