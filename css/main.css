@@ -797,9 +797,11 @@ section {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+    margin-bottom: 16px;
   }
   .card {
     width: 270px;
+    height: 428px;
     background: var(--standart-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -1543,40 +1545,40 @@ section {
   .advantage {
     padding-top: 60px;
   }
-  .advantage-set {
-    display: flex;
+  .advantage .advantage-set {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /*margin-top: -30px;
+    width: 450px;
+    /* margin-top: -30px;
         margin-left: -30px;*/
   }
-  .advantage-items {
+  .advantage .advantage-items {
     margin-top: -30px;
-    margin-left: -30px;
+    /*margin-left: -30px;*/
     /*margin-top: 30px;
         margin-left: 30px;
         flex-basis: calc((100% - 120px)/4);*/
-    width: 450px;
+    width: 100%;
     justify-items: center;
+    margin-bottom: 60px;
   }
-  .advantage-card {
+  .advantage .advantage-card {
     margin-top: 30px;
-    margin-left: 30px;
     flex-basis: calc((100% - 120px)/4);
     display: flex;
     align-items: center;
     justify-content: center;
     justify-items: center;
+    width: 450px;
     height: 120px;
     background-color: #f5f4fa;
     border-radius: 4px;
     margin-bottom: 30px;
   }
-  .advantage-name {
+  .advantage .advantage-name {
     display: flex;
-    align-items: center;
     justify-content: center;
     font-family: var(--main-font);
     font-weight: bold;
@@ -1587,10 +1589,8 @@ section {
     color: var(--main-text-color);
     margin-bottom: 10px;
   }
-  .advantage-explanation {
+  .advantage .advantage-explanation {
     display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: var(--main-font);
     font-size: 14px;
     line-height: 1.71;
@@ -1599,7 +1599,7 @@ section {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) and (min-width: 768px) {
   .advantage {
     padding-top: 60px;
   }
@@ -1642,7 +1642,7 @@ section {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 767px) and (min-width: 1200px) {
   .advantage {
     padding-top: 94px;
   }
