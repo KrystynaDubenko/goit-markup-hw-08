@@ -58,7 +58,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .clients-list {
         display: flex;
         flex-wrap: wrap;
@@ -121,9 +121,19 @@
 @media screen and (min-width: 1200px) {
     .clients-list {
         display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        margin-left: -30px;
+        margin-top: -30px;
     }
     .clients-main-link {
-        margin-right: 30px;
+        margin-left: 30px;
+        margin-top: 30px;
+       /* flex-basis: calc((100% - 90px)/3);*/
+        width: 226px;
+        justify-items: center;
+        margin-bottom: 30px;
     }
     .clients__title {
         font-family: var(--main-font);

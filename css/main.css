@@ -950,7 +950,7 @@ section {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .clients-list {
     display: flex;
     flex-wrap: wrap;
@@ -1008,9 +1008,19 @@ section {
 @media screen and (min-width: 1200px) {
   .clients-list {
     display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: -30px;
+    margin-top: -30px;
   }
   .clients-main-link {
-    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    /* flex-basis: calc((100% - 90px)/3);*/
+    width: 226px;
+    justify-items: center;
+    margin-bottom: 30px;
   }
   .clients__title {
     font-family: var(--main-font);
@@ -1917,98 +1927,86 @@ section {
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .footer-set__footer-icons {
+    fill: var(--standart-color);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .footer-icons-link:hover,
+  .footer-icons-link:focus {
+    background-color: var(--focus-color);
+  }
+  .footer-icons-link:hover.footer-icons-color, .footer-icons-link:hover.footer-icons-color,
+  .footer-icons-link:focus.footer-icons-color,
+  .footer-icons-link:focus.footer-icons-color {
+    background-color: var(--focus-color);
+  }
+  .footer-set__footer-icons-list {
+    margin-right: 10px;
+  }
+  .follow {
+    padding-top: 60px;
+  }
+  .follow__reminder {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--standart-color);
+  }
+  .follow__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mail-mark {
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .mail__follower {
+    margin-right: 12px;
+    margin-bottom: 20px;
+    width: 450px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: var(--footer-bg-color);
+    padding-left: 16px;
+    outline: none;
+    color: var(--standart-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .follow__btn {
+    display: inline-flex;
+    margin: 0 auto;
+    padding: 10px 28px 10px 29px;
+    align-items: center;
+    text-align: center;
+    min-width: 200px;
+    background: var(--focus-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    font-family: var(--main-font);
+    color: var(--standart-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .follow__icon {
+    fill: var(--standart-color);
+    margin-right: 10px;
+  }
 }
 
-.footer-set__footer-icons {
-  fill: var(--standart-color);
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.footer-icons-link:hover,
-.footer-icons-link:focus {
-  background-color: var(--focus-color);
-}
-
-.footer-icons-link:hover.footer-icons-color, .footer-icons-link:hover.footer-icons-color,
-.footer-icons-link:focus.footer-icons-color,
-.footer-icons-link:focus.footer-icons-color {
-  background-color: var(--focus-color);
-}
-
-.footer-set__footer-icons-list {
-  margin-right: 10px;
-}
-
-.follow {
-  /*margin-left: auto;*/
-  padding-top: 60px;
-}
-
-.follow__reminder {
-  display: block;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--standart-color);
-}
-
-.follow__wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.mail-mark {
-  font-family: var(--main-font);
-  font-size: 16px;
-  line-height: 1.25;
-}
-
-.mail__follower {
-  margin-right: 12px;
-  margin-bottom: 20px;
-  width: 450px;
-  height: 50px;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background: var(--footer-bg-color);
-  padding-left: 16px;
-  outline: none;
-  color: var(--standart-color);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.follow__btn {
-  display: inline-flex;
-  margin: 0 auto;
-  padding: 10px 28px 10px 29px;
-  align-items: center;
-  text-align: center;
-  min-width: 200px;
-  background: var(--focus-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  font-family: var(--main-font);
-  color: var(--standart-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.follow__icon {
-  fill: var(--standart-color);
-  margin-right: 10px;
-}
-
-@media screen and (win-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .footer-bg {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -2016,7 +2014,7 @@ section {
   }
   .main-footer {
     display: flex;
-    align-items: baseline;
+    align-items: center;
   }
   .addres-font {
     font-style: normal;
@@ -2062,12 +2060,9 @@ section {
     text-transform: uppercase;
     margin-bottom: 20px;
   }
-  .footer-set {
-    display: flex;
-    margin-right: 10px;
-  }
   .footer-set__footer-icons-color {
     display: flex;
+    justify-content: center;
     align-items: center;
     width: 44px;
     height: 44px;
@@ -2075,9 +2070,10 @@ section {
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .footer-set__footer-icons-list:not(:last-child) {
+    margin-right: 10px;
+  }
   .footer-set__footer-icons {
-    margin-right: auto;
-    margin-left: auto;
     fill: var(--standart-color);
   }
   .footer-icons-link:hover,
@@ -2090,8 +2086,12 @@ section {
     background-color: var(--focus-color);
   }
   .follow {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     margin-left: auto;
     width: 570px;
+    padding-top: 0px;
   }
   .follow__reminder {
     width: 219px;
@@ -2108,6 +2108,8 @@ section {
   .follow__wrapper {
     position: relative;
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
   }
   .mail-mark {
     position: absolute;
@@ -2147,12 +2149,14 @@ section {
     border-radius: 4px;
   }
   .follow__icon {
+    width: 24px;
+    height: 24px;
     position: absolute;
     top: 50%;
     right: 28px;
     transform: translateY(-50%);
     fill: var(--standart-color);
-    margin-left: 10px;
+    padding-left: 10px;
   }
 }
 

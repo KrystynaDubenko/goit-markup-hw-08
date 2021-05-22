@@ -233,8 +233,6 @@
     
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
-    }
     .footer-set__footer-icons {
         fill: var(--standart-color);
         margin-right: auto;
@@ -253,7 +251,6 @@
             margin-right: 10px;
         } 
     .follow {
-        /*margin-left: auto;*/
         padding-top: 60px;
     }
     .follow__reminder {
@@ -314,9 +311,9 @@
         fill: var(--standart-color);
         margin-right: 10px;
     }
+}
 
-
-@media screen and (win-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .footer-bg {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -324,7 +321,7 @@
     }
     .main-footer {
         display: flex;
-        align-items: baseline;
+        align-items: center;
     }
     .addres-font {
         font-style: normal;
@@ -370,12 +367,9 @@
         text-transform: uppercase;
         margin-bottom: 20px;
     }
-    .footer-set {
-        display: flex;
-        margin-right: 10px;
-    }
     .footer-set__footer-icons-color {
         display: flex;
+        justify-content: center;
         align-items: center;
         width: 44px;
         height: 44px;
@@ -384,13 +378,14 @@
     
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
+    .footer-set__footer-icons-list {
+        &:not(:last-child) {
+            margin-right: 10px;
+        } 
+    }
     .footer-set__footer-icons {
-        margin-right: auto;
-        margin-left: auto;
         fill: var(--standart-color);
     }
-    
     .footer-icons-link:hover,
     .footer-icons-link:focus  {
         background-color: var(--focus-color);
@@ -401,8 +396,12 @@
     }
     }
     .follow {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
         margin-left: auto;
         width: 570px;
+        padding-top: 0px;
     }
     .follow__reminder {
         width: 219px;
@@ -420,6 +419,8 @@
     .follow__wrapper {
         position: relative;
         display: flex;
+        flex-direction: row;
+        align-items: flex-start;
     }
     .mail-mark {
         position: absolute;
@@ -465,12 +466,14 @@
         border-radius: 4px;
     }
     .follow__icon {
+        width: 24px;
+        height: 24px;
         position: absolute;
         top: 50%;
         right: 28px;
         transform: translateY(-50%);
     
         fill: var(--standart-color);
-        margin-left: 10px;
+        padding-left: 10px;
     }
 }
