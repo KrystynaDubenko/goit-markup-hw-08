@@ -2,24 +2,25 @@
     padding-top: 16px;
     padding-bottom: 16px;
     
-    border-bottom: 1px solid #ececec;;
+    border-bottom: 1px solid #ececec;
 }
 
 .logo-light-theme {
     color: var(--main-text-color);
 }
-.mobile-menu.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
-@media screen and (max-width: 767px) {
+
+  @media screen and (max-width: 767px) {
     .navigation {
         display: none;
     }
     .in-touch {
         display: none;
     }
+    .mobile-menu.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
     .menu-btn,
     .mobile-menu__close-btn {
         border: none;
@@ -143,6 +144,7 @@
         color: var(--focus-color);
     }
 }
+
 @media screen and (min-width: 768px) {
     .menu-btn {
         display: none;
