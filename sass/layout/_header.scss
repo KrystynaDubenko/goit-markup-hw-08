@@ -254,15 +254,21 @@
     }
 
 @media screen and (min-width: 1200px) {
+    .header.section {
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
     .header {
         border-bottom: 1px solid #ECECEC;
         padding-bottom: 0px;
+        padding-top: 0px;
     }
     .header .container {
         align-items: center;
+        height: 80px;
     }
     .logo-light-theme {
-        top: 24px;
+        /*top: 24px;*/
         color:var(--main-text-color);
         margin-right: 93px;
     }

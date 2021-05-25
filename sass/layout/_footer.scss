@@ -317,7 +317,8 @@
     .footer-bg {
         padding-top: 60px;
         padding-bottom: 60px;
-        background: var(--footer-bg-color)
+        background: var(--footer-bg-color);
+        text-align: left;
     }
     .main-footer {
         display: flex;

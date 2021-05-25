@@ -151,9 +151,11 @@
         display: flex;
         align-items: center;
         margin-left: -30px;
+        margin-bottom: 0px;
     }
     .team-container__set {
         margin-left: 30px;
+        margin-bottom: 0px;
         flex-basis: calc((100% - 120px)/4);
     }
     .our-team-bg {
